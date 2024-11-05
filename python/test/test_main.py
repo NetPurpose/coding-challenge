@@ -40,6 +40,5 @@ Rockets
 
 Relegate:
 Bruisers
-Renegades
-"""
+Renegades"""
     assert get_results(given_division, 2) == result_string
