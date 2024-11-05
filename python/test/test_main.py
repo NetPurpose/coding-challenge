@@ -1,3 +1,4 @@
+import pytest
 from src.main import get_results
 
 given_division = [
@@ -40,6 +41,10 @@ Rockets
 
 Relegate:
 Bruisers
-Renegades
-"""
+Renegades"""
     assert get_results(given_division, 2) == result_string
+
+
+def test_throws_error_on_bad_config():
+    with pytest.raises(Exception):
+        get_results(given_division, 3)
